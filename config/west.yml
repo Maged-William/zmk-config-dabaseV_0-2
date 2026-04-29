@@ -1,0 +1,19 @@
+manifest:
+  remotes:
+    # zmk official
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: Maged-William
+      url-base: https://github.com/Maged-William
+
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: dabasev11-zmk-module
+      remote: Maged-William
+      revision: dabaseV0.2
+
+self:
+  path: config
