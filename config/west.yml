@@ -10,7 +10,6 @@ manifest:
     - name: janpfischer
       url-base: https://github.com/janpfischer
     - name: Maged-William
-    - name: Maged-William
       url-base: https://github.com/Maged-William
 
   projects:
