@@ -28,7 +28,7 @@ include:
   - board: nice_nano@2.0.0
     shield: dabase_v0-2_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: dabase_v0-2_left_peripheral
+    artifact-name: dabase_v0-2_left
 
   - board: nice_nano@2.0.0
     shield: dabase_v0-2_left

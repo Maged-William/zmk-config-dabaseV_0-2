@@ -102,13 +102,13 @@
 
         default_layer {
             bindings = <
-&kp E  &kp Q  &kp W       &kp F      &kp P  &kp B      /**/    &kp J              &kp L  &kp U      &kp Y        &kp SEMI  &kp S
-&kp E  &kp A  &kp S       &kp R      &kp T  &kp G      /**/    &kp M              &kp N  &kp E      &kp I        &kp O     &kp S
-&kp E  &kp Z  &kp X       &kp C      &kp D  &kp V      /**/    &kp K              &kp H  &kp COMMA  &kp PERIOD   &kp SLASH &kp S
-&kp E  &trans &kp C_MUTE  &lt 3 TAB  &mo 2  &kp SPACE  /**/    &kp LC(BACKSPACE)  &mo 1  &kp ENTER  &trans       &trans    &kp S
-&kp E  &kp Q  &kp W        &kp F      &kp P  &kp B             &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT &mmv MOVE_DOWN  &kp S  &kp S
-&kp E  &kp Q  &kp W        &kp F      &kp P  &kp B             &kp E  &kp Q  &kp W       &kp F      &kp P  &kp B 
-&kp E  &kp Q  &kp W        &kp F      &kp P  &kp B             &kp E  &kp Q  &kp W       &kp F      &kp P  &kp B 
+&trans  &kp Q  &kp W       &kp F      &kp P  &kp B      /**/    &kp J              &kp L  &kp U      &kp Y        &kp SEMI  &trans
+&trans  &kp A  &kp S       &kp R      &kp T  &kp G      /**/    &kp M              &kp N  &kp E      &kp I        &kp O     &trans
+&trans  &kp Z  &kp X       &kp C      &kp D  &kp V      /**/    &kp K              &kp H  &kp COMMA  &kp PERIOD   &kp SLASH &trans
+&trans  &trans &kp C_MUTE  &lt 3 TAB  &mo 2  &kp SPACE  /**/    &kp LC(BACKSPACE)  &mo 1  &kp ENTER  &trans       &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT &mmv MOVE_DOWN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
