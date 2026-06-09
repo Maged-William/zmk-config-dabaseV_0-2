@@ -26,9 +26,3 @@
 &soft_off_wakers {
     wakeup-sources = <&mock_kscan>;
 };
-
-&left_encoder {
-    a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    steps = <4>;
-};
