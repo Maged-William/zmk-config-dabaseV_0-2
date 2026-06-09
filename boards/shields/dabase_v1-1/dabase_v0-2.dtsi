@@ -18,6 +18,13 @@
         zmk,physical-layout = &default_layout;
     };
 
+    esb_split {
+        compatible = "zmk,esb-split";
+        base-addr-0 = <0x12 0x34 0x56 0x78>;
+        base-addr-1 = <0x9A 0xBC 0xDE 0xF0>;
+        addr-prefix = <0x12 0x13 0x14 0x15 0x16 0x17 0x18 0x19>;
+    };
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
@@ -36,12 +43,21 @@
         wakeup-source;
     };
 
+    soft_off_wakers: soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&kscan0>;
+    };
+
+    split: split {
+        compatible = "zmk,split";
+    };
+
     left_encoder: encoder_left {
         compatible = "alps,ec11";
         a-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         label = "LEFT_ENCODER";
-		resolution = <2>;
+        resolution = <2>;
         status = "disabled";
     };
 
