@@ -48,7 +48,7 @@ include:
     artifact-name: dabase_v0-2_right
 
     # Reset shields
-  - board: nice_nano//zmk
+  - board: nice_nano_v2
     shield: settings_reset
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: settings_reset
