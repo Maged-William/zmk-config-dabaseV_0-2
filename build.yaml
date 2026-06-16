@@ -13,41 +13,41 @@
 #
 include:
   # dabase_v0-2
-  # - board: xiao_ble//zmk
-  #   shield: dabase_v0-2_dongle
-  #   snippet: studio-rpc-usb-uart
-  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
-  #   artifact-name: xiao_dongle
+  - board: xiao_ble//zmk
+    shield: dabase_v0-2_dongle
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: xiao_dongle
 
-  # - board: nice_nano//zmk
-  #   shield: dabase_v0-2_dongle
-  #   snippet: studio-rpc-usb-uart
-  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
-  #   artifact-name: dabase_v0-2_dongle
+  - board: nice_nano//zmk
+    shield: dabase_v0-2_dongle
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: dabase_v0-2_dongle
 
-  # - board: nice_nano//zmk
-  #   shield: dabase_v0-2_left
-  #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  #   artifact-name: dabase_v0-2_left
+  - board: nice_nano//zmk
+    shield: dabase_v0-2_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: dabase_v0-2_left
 
-  # - board: nice_nano//zmk
-  #   shield: dabase_v0-2_left
-  #   snippet: studio-rpc-usb-uart
-  #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
-  #   artifact-name: dabase_v0-2_left_central
+  - board: nice_nano//zmk
+    shield: dabase_v0-2_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    artifact-name: dabase_v0-2_left_central
 
-  # - board: nice_nano//zmk
-  #   shield: dabase_v0-2_right
-  #   snippet: studio-rpc-usb-uart
-  #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
-  #   artifact-name: dabase_v0-2_right_central
+  - board: nice_nano//zmk
+    shield: dabase_v0-2_right
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    artifact-name: dabase_v0-2_right_central
 
-  # - board: nice_nano//zmk
-  #   shield: dabase_v0-2_right
-  #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  #   artifact-name: dabase_v0-2_right
+  - board: nice_nano//zmk
+    shield: dabase_v0-2_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: dabase_v0-2_right
 
-  # Reset shields
+    # Reset shields
   - board: nice_nano
     shield: settings_reset
   - board: seeeduino_xiao
