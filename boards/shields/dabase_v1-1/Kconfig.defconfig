@@ -32,4 +32,7 @@ config ZMK_SPLIT
 config ZMK_BLE
     default y
 
+config ZMK_POINTING
+    default y
+
 endif
