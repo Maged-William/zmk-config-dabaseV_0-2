@@ -35,15 +35,15 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
     artifact-name: dabase_v0-2_left_central
-  - board: nice_nano@2.0.0
-    shield: dabase_v0-2_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
-    artifact-name: dabase_v0-2_right_central
   # - board: nice_nano@2.0.0
   #   shield: dabase_v0-2_right
-  #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  #   artifact-name: dabase_v0-2_right
+  #   snippet: studio-rpc-usb-uart
+  #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+  #   artifact-name: dabase_v0-2_right_central
+  - board: nice_nano@2.0.0
+    shield: dabase_v0-2_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: dabase_v0-2_right
 
   # Reset shields
   - board: nice_nano@2.0.0
