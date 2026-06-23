@@ -29,11 +29,11 @@
     };
 
     left_encoder: encoder_left {
-        compatible = "alps,ec11";
+        compatible = "efog,ec11-ish";
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        label = "LEFT_ENCODER";
-        resolution = <4>;
+        steps = <20>;
+        pulses = <4>;
         status = "disabled";
     };
 

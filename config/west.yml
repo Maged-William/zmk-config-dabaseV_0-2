@@ -5,6 +5,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: Maged-William
       url-base: https://github.com/Maged-William
+    - name: efogdev
+      url-base: https://github.com/efogdev
 
   projects:
     - name: zmk
@@ -13,6 +15,9 @@ manifest:
       import: app/west.yml
     - name: dabasev02-zmk-module
       remote: Maged-William
+      revision: main
+    - name: zmk-ec11-ish-driver
+      remote: efogdev
       revision: main
 
 
