@@ -30,5 +30,5 @@
 &left_encoder {
     a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    resolution = <4>;
+    pulses = <4>;
 };
