@@ -56,7 +56,6 @@
         compatible = "efog,ec11-ish";
         a-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        label = "LEFT_ENCODER";
         steps = <20>;
         pulses = <2>;
         status = "disabled";
