@@ -5,14 +5,6 @@
 
 / {
     behaviors {
-        volume_behavior: volume_behavior {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "VOLUME_BEHAVIOR";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOLUME_DOWN>, <&kp C_VOLUME_UP>;
-
-            tap-ms = <5>;
-        };
 
         //  Ctrl + [ → (
 
@@ -108,12 +100,12 @@
 &trans  &trans &kp C_MUTE  &lt 3 TAB  &mo 2  &kp SPACE  /**/    &kp LC(BACKSPACE)  &mo 1  &kp ENTER  &trans       &trans    &trans
             >;
 
-            sensor-bindings = <&volume_behavior>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         symbol {
             label = "sym";
-            sensor-bindings = <&volume_behavior>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
             bindings = <
 &trans  &kp GRAVE &kp MINUS &kp EQUAL &kp APOS &kp ASTRK                   &trans      &trans          &kp LS(BACKSLASH)   &kp AMPS        &kp ESC       &trans
 &trans  &kp N1    &kp N2    &kp N3    &kp N4   &kp N5                      &arrowfunc  &kp LEFT_SHIFT  &kp LCTRL           &kp LEFT_ALT    &kp LEFT_WIN  &trans
@@ -123,7 +115,7 @@
         };
 
         ARROWS {
-            sensor-bindings = <&volume_behavior>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
             bindings = <
 &trans &kp LC(X)    &kp LC(C)    &kp LC(V)      &kp LG(V)      &kp LG(LS(T))                    &trans      &kp PG_UP   &kp UP      &kp PG_DN   &kp ESC &trans
 &trans &kp LEFT_GUI &kp LEFT_ALT &kp LCTRL      &kp LEFT_SHIFT &kp Y                            &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END &trans
@@ -133,7 +125,7 @@
         };
 
         MOUSE {
-            sensor-bindings = <&volume_behavior>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
             bindings = <
 &trans  &kp LC(X)      &kp LC(C)      &kp LC(V)       &kp LG(V)       &kp LG(LS(T))          &trans          &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN  &kp ESCAPE      &trans
 &trans  &kp LEFT_GUI   &kp LEFT_ALT   &kp LCTRL       &kp LEFT_SHIFT  &trans                 &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_RIGHT &trans
@@ -143,7 +135,7 @@
         };
 
         gaming {
-            sensor-bindings = <&volume_behavior>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
             bindings = <
 &trans  &mt TAB ESCAPE &kp Q   &kp W        &kp E     &kp R           &mt T Y  &mt U I       &kp UP    &mt O P   &mt L M  &trans
 &trans  &kp CAPS       &kp A   &kp S        &kp D     &kp F           &mt H G  &kp LEFT      &kp DOWN  &kp RIGHT &mt J K  &trans
