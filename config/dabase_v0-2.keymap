@@ -17,6 +17,7 @@
         volume_behavior: volume_behavior {
             compatible = "zmk,behavior-sensor-rotate";
             label = "VOLUME_BEHAVIOR";
+            #sensor-binding-cells = <0>;
             bindings = <&kp C_VOLUME_DOWN>, <&kp C_VOLUME_UP>;
 
             tap-ms = <5>;
