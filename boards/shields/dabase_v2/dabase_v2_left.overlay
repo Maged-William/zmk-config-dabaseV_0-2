@@ -1,4 +1,10 @@
-#include "dabase_v0-2.dtsi"
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "dabase_v2.dtsi"
 
 &kscan0 {
     diode-direction = "col2row";
