@@ -15,14 +15,10 @@ include:
   # dabase_v0-2
   - board: xiao_ble//zmk
     shield: dabase_v0-2_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: xiao_dongle
 
   - board: nice_nano//zmk
     shield: dabase_v0-2_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: dabase_v0-2_dongle
 
   - board: nice_nano//zmk
