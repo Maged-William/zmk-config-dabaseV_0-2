@@ -1,0 +1,12 @@
+file_format: "1"
+id: dabase
+name: dabase v2
+type: shield
+url: https://github.com/Maged-William/zmk-config-dabaseV_0-2
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - dabase_v0-2_left
+  - dabase_v0-2_right
+  - dabase_v0-2_dongle

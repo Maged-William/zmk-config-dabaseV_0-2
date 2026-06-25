@@ -1,26 +1,10 @@
 if SHIELD_DABASE_V11_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "DabaseV1.1"
+    default "DabaseV2"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
-config ZMK_USB
-    default y
-
-# Number of peripherals (left + right = 2)
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 2
-
-# BT_MAX_CONN = number of peripherals + desired BT host profiles (default 5)
-# 2 peripherals + 5 profiles = 7
-config BT_MAX_CONN
-    default 7
-
-# Must match BT_MAX_CONN
-config BT_MAX_PAIRED
-    default 7
 
 endif
 
@@ -31,5 +15,8 @@ config ZMK_SPLIT
 
 config ZMK_BLE
     default y
+
+config ZMK_POINTING
+	default y
 
 endif
