@@ -5,12 +5,13 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "dabase_v2-layouts.dtsi"
 
 / {
 
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
+		zmk,physical-layout = &dabase_layout;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -45,4 +46,9 @@
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
+};
+
+&dabase_layout {
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
 };

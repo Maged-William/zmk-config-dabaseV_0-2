@@ -149,5 +149,17 @@
 &trans  &trans         &trans  &kp LEFT_ALT &kp LCTRL &kp SPACE       &kp DEL  &kp BACKSPACE &kp ENTER &trans    &trans   &trans
             >;
         };
+
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
+        };
+
+        extra3 {
+            status = "reserved";
+        };
     };
 };

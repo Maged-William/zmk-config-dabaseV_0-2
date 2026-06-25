@@ -5,10 +5,19 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "dabase_v2-layouts.dtsi"
 
 / {
     chosen {
-        zmk,matrix_transform = &mock_transform;
+        zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &dabase_layout;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
     };
 
 	mock_transform: keymap_transform_0 {
@@ -38,4 +47,8 @@
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
+};
+
+&dabase_layout {
+    transform = <&mock_transform>;
 };
